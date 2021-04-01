@@ -41,11 +41,15 @@ Configure Template
 ```
 Template {"NAME":"Serial","GPIO":[0,0,0,0,1,1,0,0,0,0,0,0,0,0],"FLAG":0,"BASE":18}
 ```
-Serial setup on boot
+Configure Module
+
+<img src="pics/module_config.png" width="200" />
+
+Create rule to setup serial on boot (9600 baud, 8N1 and Send & recive binary date hex encoded)
 ```
 rule1 on SYSTEM#BOOT DO Backlog SBaudrate 1; SerialConfig 3; SSerialSend5 ""; BREAK
 ```
-enable rule1
+enable the setup rule1
 ```
 rule1 1
 ```
