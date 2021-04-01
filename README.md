@@ -30,3 +30,6 @@ The Pins in the RJ10 connector have the following Connections:
  - Yellow -> 3,3 V
  
  (D1 and D2 are normal GPIO Pins. The serial interface will later be done in software)
+
+<img src="pics/esp.jpg" width="200" />  <img src="pics/rj10.jpg" width="200" />
+
