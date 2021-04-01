@@ -33,3 +33,19 @@ The Pins in the RJ10 connector have the following Connections:
 
 <img src="pics/esp.jpg" width="200" />  <img src="pics/rj10.jpg" width="200" />
 
+## Software
+
+### Tasmota config
+
+Configure Template 
+```
+Template {"NAME":"Serial","GPIO":[0,0,0,0,1,1,0,0,0,0,0,0,0,0],"FLAG":0,"BASE":18}
+```
+Serial setup on boot
+```
+rule1 on SYSTEM#BOOT DO Backlog SBaudrate 1; SerialConfig 3; SSerialSend5 ""; BREAK
+```
+enable rule1
+```
+rule1 1
+```
